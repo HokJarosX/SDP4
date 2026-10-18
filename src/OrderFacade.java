@@ -11,6 +11,10 @@ public class OrderFacade {
         notification = new NotificationService();
     }
 
+    public int getStock() {
+        return inventory.getStock();
+    }
+
     public boolean placeOrder(int quantity, double price, String customer, String address){
         double total = quantity * price;
 
