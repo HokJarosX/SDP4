@@ -9,4 +9,7 @@ public class PaymentProcessor {
         System.out.println("Payment successful");
         return true;
     }
+    public void refundPayment(double amount) {
+        System.out.println("Refunded: " + amount);
+    }
 }
